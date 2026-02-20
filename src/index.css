@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-blue: #004EA8;
+  --color-brand-teal: #64CCC9;
+  --color-brand-light: #B9D9EB;
+  --color-brand-muted: #A2B2C8;
+  
+  --color-bg: #F8FAFC;
+  --color-ink: #0F172A;
+  --color-line: #E2E8F0;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-sans;
+  }
+}
+
+.data-row {
+  @apply grid grid-cols-[40px_1.5fr_1fr_1fr_100px_120px] p-4 border-b border-line transition-colors duration-200 cursor-pointer;
+}
+
+.data-row:hover {
+  @apply bg-brand-blue/5;
+}
+
+.col-header {
+  @apply font-display font-bold text-[10px] text-brand-muted uppercase tracking-[0.15em];
+}
+
+.data-value {
+  @apply font-mono tracking-tighter;
+}
+
+.brand-header {
+  @apply font-display font-bold uppercase tracking-[0.15em];
+}
+

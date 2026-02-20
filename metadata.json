@@ -1,0 +1,5 @@
+{
+  "name": "Smart Examiner Dashboard",
+  "description": "Internal title review control panel for assertion validation, risk classification, and underwriting rule mapping.",
+  "requestFramePermissions": []
+}
